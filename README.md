@@ -1,28 +1,52 @@
-# MERN Portfolio Website
+# Jahanavi's MERN Portfolio
+
+## Live Demo
+
+**Portfolio Website:** https://mern-portfolio-dusky-delta.vercel.app
+
+**GitHub Repository:** https://github.com/jahnavichowdary15/mern-portfolio
 
 ## Project Description
 
-A personal portfolio website built with the MERN stack. It presents my profile, technical skills, education, projects, certificates, and a contact form.
+A personal portfolio website developed using the MERN stack to showcase my profile, technical skills, education, projects, certifications, and contact information. The website includes a contact form and CV download options.
 
 ## Technologies Used
 
 - **Frontend:** React, Vite, CSS
 - **Backend:** Node.js, Express.js
-- **Database:** MongoDB
-- **Version control:** Git and GitHub
+- **Database:** MongoDB Atlas
+- **Version Control:** Git and GitHub
+- **Frontend Hosting:** Vercel
+- **Backend Hosting:** Render
 
-## Live Deployment
+## Features
 
-**Live website:** `ADD_YOUR_LIVE_DEPLOYMENT_URL_HERE`
+- Personal introduction and profile photo
+- Technical skills section
+- Education details
+- Projects showcase
+- Certifications and hackathon participation
+- CV download options
+- Contact form connected to the backend API
+- Responsive portfolio interface
 
-> Replace this placeholder with the real public URL after deploying the frontend. Do not invent a URL.
+## Project Structure
+
+```text
+mern-portfolio/
+├── client/          # React frontend
+├── server/          # Express backend and API
+├── .gitignore
+└── README.md
+```
 
 ## Local Setup Instructions
 
 ### Prerequisites
 
 - Node.js and npm
-- A MongoDB database (MongoDB Atlas or a local MongoDB instance)
+- A MongoDB Atlas account or MongoDB instance
+- Git
 
 ### 1. Clone the repository
 
@@ -31,16 +55,16 @@ git clone https://github.com/jahnavichowdary15/mern-portfolio.git
 cd mern-portfolio
 ```
 
-### 2. Install and configure the backend
+### 2. Configure and start the backend
 
 ```bash
 cd server
 npm install
 ```
 
-Create a `.env` file inside the `server` folder. Use `.env.example` as a guide and add your own MongoDB connection string. Never commit `.env` or share its credentials.
+Create a `.env` file inside the `server` folder using `.env.example` as a reference.
 
-Example variable names (use your own private values):
+Configure the following environment variables with your own values:
 
 ```env
 PORT=5000
@@ -54,19 +78,50 @@ Start the backend:
 npm run dev
 ```
 
-### 3. Install and run the frontend
+The backend should run at `http://localhost:5000`.
 
-Open a **second terminal** in the project root and run:
+### 3. Configure and start the frontend
+
+Open a second terminal in the project root:
 
 ```bash
 cd client
 npm install
+```
+
+Create a `.env` file inside `client` with:
+
+```env
+VITE_API_BASE_URL=http://localhost:5000
+```
+
+Start the frontend:
+
+```bash
 npm run dev
 ```
 
-Open the local URL printed by Vite in the terminal (usually `http://localhost:5173`).
+Open the local URL displayed in the terminal, usually `http://localhost:5173`.
+
+## Deployment
+
+- **Frontend:** Deployed on Vercel
+- **Backend:** Deployed on Render
+- **Database:** MongoDB Atlas
 
 ## Security
 
-- Keep `.env` files, MongoDB URIs, passwords, and API keys out of GitHub.
-- The `.gitignore` file should exclude `.env` and `node_modules`.
+- Never commit `.env` files, database passwords, or other secret credentials.
+- Configure environment variables separately in the hosting platforms.
+- Use `.env.example` to document required variables without including real secrets.
+
+## Author
+
+**Doddapuneni Jahanavi**
+
+B.Tech Computer Science and Engineering (AI & ML)  
+JK Lakshmipat University, Jaipur, Rajasthan
+
+- **Email:** jahnavichowdary180@gmail.com
+- **LinkedIn:** https://www.linkedin.com/in/jahnavi-chowdary-21708034a
+- **GitHub:** https://github.com/jahnavichowdary15
