@@ -1,0 +1,22 @@
+
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Secret environment files
+.env
+.env.*
+!.env.example
+client/.env
+client/.env.*
+server/.env
+server/.env.*
+
+# Build output
+client/dist/
+dist/
+
+# Local tooling
+.DS_Store
+.vscode/
